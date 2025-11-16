@@ -1,0 +1,92 @@
+/* colors 
+
+    deflaut   #5C6A72
+    accents:
+        1     #F85552   red 
+        2     #F57D26   orange
+        3     #DFA000   yellow
+        4     #8DA101   green 
+        5     #35A77C   aqua
+        6     #3A94C5   blue 
+        7     #DF69BA   pink
+    Greys 
+        1     #A6B0A0
+        2     #939F91
+        3     #829181
+    statusline 
+        1     #93B259   green
+        2     #708089   gray/blue
+        3     #E66868   red
+*/ 
+
+
+*{
+    font-family: HurmitNerdFont;
+    font-size: 17px;
+}
+
+window#waybar{
+    background-color: transparent;
+}
+
+#clock{
+    color: #DF69BA;
+    padding: 0 5px 0 0 ;
+    margin: 0 0 0 0px;
+
+}
+
+/*state*/
+#battery{
+    color:#708089;
+    padding: 0 7px 0 5px ;
+    margin: 0 5px 0 -5px;
+}
+
+
+#battery.charging, #battery.plugged {
+    color: #93B259;
+}
+
+#battery.warning{
+    color:#E66868;
+}
+
+#backlight{
+    color: blueviolet;
+    padding: 0 5px 0 5px;
+    margin: 0 0 0 -5px;
+}
+
+#network{
+    color: #3A94C5;
+    padding: 0 10px ;
+    margin: 0 0 0 -5px
+}
+
+#pulseaudio{
+    color: #35A77C;
+}
+
+#cpu{
+    color: #F57D26;
+    padding:0 8px;
+    margin: 0;
+}
+
+#temperature{
+    color: #DFA000;
+    padding:0 8px;
+    margin: 0 0 0 -5px;
+}
+
+#memory{
+    color: #35A77C;
+    padding:0 10px 0 5px;
+    margin: 0 0 0 -5px;
+}
+
+#workspaces button{
+    color: #A6B0A0;
+}
+

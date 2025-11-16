@@ -1,0 +1,87 @@
+{
+    "hyprland/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    
+    
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "interval":5,
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "interval":5,
+        "format": "{}% "
+    },
+    "temperature": {
+        "interval":5,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C",
+        "tooltip":false
+    },
+    "backlight": {
+        "format":"{icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip":false
+    },
+    "battery": {
+        "interval":15,
+        "states": {
+            "good": 95,
+            "average":75,
+            "warning": 30
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "interval":5,
+        "format-wifi": "",
+        "format-ethernet": "",
+        "tooltip-format": "{gwaddr}",
+        "format-disconnected": "󰖪",
+        "format-alt": "{essid}"
+    },
+    "pulseaudio": {
+        "scroll-step": 10, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{icon} {format_source}",
+        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+    /*
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
+    */
+}

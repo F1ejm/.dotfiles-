@@ -1,0 +1,23 @@
+
+{
+    "layer": "top",  
+    "spacing": 10, 
+    "include":[
+        "~/.config/waybar/modules.jsonc"
+    ],
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "cpu",
+        "temperature",
+        "memory"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "backlight",
+        "battery",
+        "clock"
+    ]
+}
