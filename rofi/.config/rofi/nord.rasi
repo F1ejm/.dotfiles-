@@ -6,18 +6,16 @@
 
 * {
 	nord0: #2e3440;
-	nord1: #3b4252;
-	nord2: #434c5e;
-	nord3: #495161ff;
-
-	nord4: #d8dee9;
-	nord5: #e5e9f0;
-	nord6: #eceff4;
-
-	nord7: #e5e9f0;
-	nord8: #eceff4;
-	nord9: #d8dee9;
-	nord10: #d8dee9;
+    nord1: #3b4151;
+    nord2: #4a4e62;
+    nord3: #585c73;
+    nord4: #676a84;
+    nord5: #767895;
+    nord6: #8586a6;
+    nord7: #9394b8;
+    nord8: #a2a2c9;
+    nord9: #b1b0da;
+    nord10: #b1b0da;
 	nord11: #bf616a;
 
 	nord12: #d08770;
